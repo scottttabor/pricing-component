@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --white: #FFFFFF;
+    --primary-color: #2AB3B1;
+    --secondary-color: #C0DF33;
+    --gray: #9AA7BE;
+    --main-bg: #F2F2F2;
+    --light-weight: 400;
+    --heavy-weight: 700;
+}
+
+main {
+    min-height: 100vh;
+    background-color: var(--main-bg);
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.card {
+    max-width: 19.45rem;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 5px;
+
+}
+
+.card-header,
+.monthly-sub,
+.why-us {
+    padding: 1.5rem;
+}
+
+.card-header h1 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--heavy-weight);
+}
+
+.card-header h2 {
+    font-size: .97rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-weight: var(--heavy-weight);
+}
+
+.card-header p {
+    font-size: .86rem;
+    color: var(--gray);
+    line-height: 1.6;
+    font-weight: var(--light-weight);
+    margin-bottom: .2rem;
+
+}
+
+.monthly-sub {
+    background-color: var(--primary-color);
+}
+
+.monthly-sub h3 {
+    color: var(--white);
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    margin-bottom: .35rem;
+}
+
+.pricing .price {
+    font-size: 2rem;
+    margin-right: .5rem;
+    color: var(--white);
+}
+
+.pricing .price-per {
+    font-size: 1rem;
+    color: var(--white);
+    opacity: .8;
+}
+
+.monthly-sub p {
+    color: var(--white);
+
+}
+
+
+.monthly-sub a {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}
+
+.why-us {
+    color: var(--white);
+    background-color: var(--primary-color);
+    opacity: .8;
+
+}
+
+.why-us h3 {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.why-us p {
+    font-size: .92rem;
+    margin: .25rem;
+    opacity: .8;
+
+}
+
+
+@media screen and (width: 280px) {
+    .card {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        max-width: 39.68rem;
+    }
+
+    .card-footer {
+        display: flex;
+    }
+
+    .monthly-sub {
+        width: 50%;
+        border-radius: 0 0 0 5px;
+        padding: 2rem;
+    }
+
+    .monthly-sub a {
+        margin-top: 1.75rem;
+    }
+
+    .why-us {
+        width: 50%;
+        border-radius: 0 0 5px 0;
+        padding: 2rem;
+    }
+}
